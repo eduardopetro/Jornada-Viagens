@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --bordo: #B81515;
+    --cinza-m-claro: #F5F5F5;
+
+    --fonte-principal: 'Montserrat';
+}
+
+body {
+    background: var(--cinza-m-claro);
+}
+
+
+.header__container {
+    background: var(--preto);
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-jornada {
+    width: 130px;
+    padding: 2em 0em 2em 2em;
+}
+
+.material-symbols-outlined {
+    display: block;
+    color: var(--branco);
+    padding: 1.7em 1em 0em 0em;
+
+}
+
+.header__link {
+    display: none;
+}
+
+a {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.img-arrow {
+    padding-left: 7em;
+    font-weight: 400;
+    width: 17px;
+    height: 10px;
+}
+
+.bandeira{
+    padding-left: 1em;
+    position: relative;
+    right: 1em;
+    top: 10px;
+}
+
+
+@media screen and (min-width:768px) {
+    .header__container {
+        height: 160px;
+        
+    }
+
+    .logo-jornada {
+        width: 220px;
+        height: 72px;
+    }
+
+    .material-symbols-outlined {
+        padding-right: 1.9em;
+        padding-top: 2.4em;
+
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    a {
+        line-height: 2em;
+        
+        display: block;
+    }
+
+
+}
+
+
+@media screen and (min-width:1444px) {
+
+    .header__container {
+        background: var(--preto);
+        height: 6.25em;
+        padding: 1em 0px 1em 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    span#menu-button{
+        display: none;
+    }
+
+    .logo-jornada {
+        width: 260px;
+    }
+
+    .header__link {
+        display: block;
+        display: flex;
+        gap: 30px;
+        padding-right: 3em;
+
+
+    }
+
+    .img-arrow {
+        display: block;
+        position: relative;
+        left: 5px;
+        bottom: 29px;
+
+
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+}
+
+/* MAIN*/
+
+.banner__blog {
+    background-image: url('./assets/Banner\ Japão-blog.png');
+    background-position: center top;
+    height: 420px;
+
+}
+
+.banner__descricao {
+    padding: 1em 1.3em 2em 1.2em;
+}
+
+.banner__title {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+
+.banner__paragraph {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5em;
+    width: 17em;
+    color: var(--branco);
+}
+
+.title {
+    font-family: var(--fonte-principal);
+    font-size: 2.3em;
+    font-weight: 700;
+    display: flex;
+    padding-left: 3.5em;
+    padding-top: 1em;
+}
+
+.line {
+    width: 150px;
+    padding-left: 7em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.blog__title {
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.blog__paragraph {
+    font-family: var(--fonte-principal);
+    font-size: 0.8em;
+    color: var(--preto);
+    font-weight: 400;
+    line-height: 2em;
+    width: 20.70em;
+    padding: 1em 0em 1em 4em;
+}
+
+.title__destanations {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 13em;
+    padding-left: 2em;
+}
+
+.tokyo__blog {
+    width: 360px;
+    height: 200px;
+}
+
+span {
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    padding: 2em 0em 0em 2.5em;
+}
+
+.img__countries {
+    width: 360px;
+    padding-top: 1em;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destinations__title {
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1em;
+
+}
+
+.paragraph__destinations {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-weight: 400;
+    font-size: 1em;
+    width: 21em;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+
+}
+
+.button__destinations {
+    background: var(--bordo);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    border: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    margin-left: 1.3em;
+
+}
+
+@media screen and (min-width:768px) {
+    .banner__descricao {
+        padding: 5em 0em 0em 2em;
+    }
+
+    .title {
+        padding-left: 9em;
+    }
+
+    .line {
+        padding-left: 19.50em;
+    }
+
+    .blog__title {
+        text-align: left;
+        padding-left: 0.5em;
+    }
+
+    .blog__paragraph {
+        width: 45em;
+        font-size: 1em;
+        padding: 1em 0em 1em 1em;
+    }
+
+    .tokyo__blog {
+        width: 768px;
+    }
+
+    span {
+        font-size: 1.4em;
+        padding-left: 0px;
+    }
+
+    .title__destanations {
+        width: 25em;
+        padding-left: 6em;
+    }
+
+    .img__countries {
+        width: 768px;
+    }
+
+    .paragraph__destinations {
+        width: 30em;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        padding-left: 1em;
+    }
+
+    .button__destinations {
+        padding: 1em 2em 1em 2em;
+    }
+
+}
+
+@media screen and (min-width:1444px) {
+    .banner__blog {
+        background-position: left left;
+        height: 620px;
+    }
+
+    .banner__descricao {
+        padding: 13.50em 0em 0em 8.50em;
+    }
+
+    .banner__title {
+        font-size: 3em;
+    }
+
+    .banner__paragraph {
+        width: 29em;
+        font-size: 1.25em;
+        line-height: 2em;
+    }
+
+    .title {
+        font-family: var(--fonte-principal);
+        padding-left: 16.50em;
+        font-size: 2.5em;
+    }
+
+    .line {
+        padding-left: 40em;
+    }
+
+    .blog__title {
+        padding-left: 3.90em;
+        font-size: 2em;
+    }
+
+    .blog__paragraph {
+        width: 60em;
+        padding-left: 6.30em;
+        font-size: 1.25em;
+    }
+
+    .tokyo__blog {
+        padding-left: 7.80em;
+        width: 1200px
+    }
+
+    span {
+        padding-left: 5.60em;
+    }
+
+    .destinations {
+        display: flex;
+        flex-direction: row;
+        padding-left: 7.50em;
+
+
+    }
+
+    .title__destanations {
+        padding-left: 7.50em;
+        font-size: 2.5em;
+    }
+
+    .img__countries {
+        width: 384px;
+        height: 300px;
+    }
+
+    .img__hiroshima {
+        padding-top: 4.9em;
+
+    }
+
+    .img__kyoto {
+        padding-top: 3em;
+    }
+
+    .paragraph__destinations {
+        width: 19.30em;
+        font-size: 1.25em;
+    }
+}
+
+/*FOOTER*/
+
+
+.footer__background {
+    width: 360px;
+    height: 346px;
+    margin-top: 2.5em;
+    background: var(--preto);
+}
+
+.footer__container {
+    display: flex;
+    margin-left: 1em;
+    flex-direction: column;
+    line-height: 1.5em;
+}
+
+.img__footer {
+    width: 161.84px;
+    height: 40px;
+    padding: 1em 5em 0em 5em;
+
+}
+
+.paragraph__footer {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-m-claro);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    width: 20em;
+    line-height: 1.5em;
+    padding-left: 0px;
+
+}
+
+.img__redes-sociais {
+    width: 100px;
+    padding-left: 7em;
+    padding-top: 1em;
+}
+
+
+@media screen and (min-width:768px) {
+    .footer__background {
+        width: 768px;
+
+    }
+
+    .footer__container {
+        display: flex;
+        padding-left: 12em;
+
+
+    }
+
+
+    .img__redes-sociais {
+        width: 70px;
+        height: 40px;
+        padding-left: 8em;
+
+    }
+
+}
+
+@media screen and (min-width:1444px) {
+    .footer__background {
+        width: 1444px;
+        height: 280px;
+    }
+
+    .footer__container {
+        padding: 0px;
+        padding-top: 1em;
+    }
+
+
+    .colum {
+        position: relative;
+        left: 868px;
+        bottom: 120px;
+        padding: 0px;
+    }
+
+    .img__footer {
+        padding-top: 2em;
+    }
+
+    .paragraph__footer {
+        width: 30em;
+        padding-left: 5em;
+    }
+
+    .img__redes-sociais {
+        padding-left: 17.5em;
+        padding-top: 1em;
+    }
+}

@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+:root {
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --bordo: #B81515;
+    --cinza-m-claro: #F5F5F5;
+
+    --fonte-principal: 'Montserrat';
+}
+
+body {
+    background: var(--cinza-m-claro);
+}
+
+
+/*Header*/
+
+.header__container {
+    background: var(--preto);
+    justify-content: space-around;
+    display: flex;
+    padding: 2.3em 0em 2.3em 0em;
+
+}
+
+.material-symbols-outlined {
+    color: var(--branco);
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+
+.img__logo {
+    padding-right: 2em;
+    width: 130px;
+    height: 32px;
+}
+
+.header__link {
+    display: none;
+    padding: 1em 0em 5em 5em;
+}
+
+li>a {
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--cinza-m-claro);
+}
+
+.img-arrow {
+    padding-left: 7em;
+    font-weight: 400;
+    width: 17px;
+    height: 10px;
+}
+
+.bandeira {
+    padding-left: 1em;
+    position: relative;
+    right: 1em;
+    top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .header__container {
+        height: 94px;
+        display: flex;
+        justify-content: space-around;
+        gap: 140px;
+
+    }
+
+    .material-symbols-outlined {
+        position: relative;
+        top: 25px;
+        right: 50px;
+    }
+
+    .img__logo {
+        width: 200px;
+        height: 64px;
+    }
+
+}
+
+@media screen and (min-width:1444px) {
+
+    .header__container {
+        height: 50px;
+    }
+
+    span#menu-button {
+        display: none;
+    }
+
+
+
+    .header__link {
+        display: block;
+        display: flex;
+        gap: 50px;
+    }
+
+    li>a {
+        font-size: 1.25em;
+    }
+
+    .header__links-a {
+        position: relative;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .img-arrow {
+        display: block;
+        position: relative;
+        left: 5px;
+        bottom: 45px;
+
+
+    }
+
+    .bandeira {
+        display: block;
+        position: relative;
+        right: 45px;
+        top: -3px;
+
+
+
+    }
+}
+
+/* MAIN */
+
+.main__banner {
+    background-image: url('./assets/Banner\ Japão-mobile-tablet.png');
+    width: 360px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+.title__japao {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 2.9em;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+
+}
+
+.paragraph__japao {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 2em;
+    width: 13.30em;
+    padding-top: 1.5em;
+}
+
+.line-japao {
+    margin-right: 5em;
+}
+
+.title {
+    font-family: var(--fonte-principal);
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--preto);
+    text-align: center;
+    padding-top: 1em;
+}
+
+
+
+.line {
+    margin-left: 5.50em;
+    padding: 0.5em 0em 1em 0em;
+}
+
+
+.paragraph__main {
+    font-family: var(--fonte-principal);
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 2em;
+    letter-spacing: 0em;
+    padding: 1.2em;
+    text-align: left;
+
+}
+
+h2 {
+
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.destinations__subtitle {
+    text-align: left;
+    margin-left: 0.7em;
+}
+
+.paragraph__destinations {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 1em;
+    width: 15.50em;
+}
+
+.img__countries {
+    width: 312px;
+}
+
+.button__destinations {
+    font-family: var(--fonte-principal);
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--cinza-m-claro);
+    background: var(--bordo);
+    border-radius: 0.5em;
+    border: none;
+    padding: 1em;
+    width: 15.375em;
+    margin-bottom: 2em;
+}
+
+.Payment__terms {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.passport {
+    width: 144px;
+    height: 200px;
+
+}
+
+.img-passport {
+    width: 312px;
+    height: 182px;
+}
+
+.payment__valor {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.payment__title {
+    margin-top: 1em;
+}
+
+.paragraph__paymet {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 2em;
+    padding: 1em 0em 1em 0em;
+    width: 15em;
+}
+
+.payment__button {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    background: var(--bordo);
+    border: none;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+    font-weight: 700;
+    width: 315px;
+    margin-left: 0.3em;
+    margin-bottom: 2em;
+}
+
+.passport {
+    margin: 0.5em;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.paragraph__testimonials {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 0.8em;
+    font-weight: 400;
+    width: 19.50em;
+    line-height: 1.5em;
+
+
+}
+
+.testimonials__avatar {
+    width: 55px;
+    margin-left: -1.5em;
+    margin-top: 2em;
+}
+
+.avaliation {
+    position: relative;
+    left: 32px;
+    bottom: 62px;
+}
+
+h5 {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 1em;
+    font-weight: 700;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.img_background {
+    background: var(--preto);
+}
+
+.img__pre-footer-tablet-desktop {
+    display: none;
+
+}
+
+.img__pre-footer {
+    display: block;
+}
+
+
+@media screen and (min-width:768px) {
+    .main__banner {
+        width: 768px;
+        height: 480px;
+
+
+    }
+
+    .line-japao {
+        padding-right: 10em;
+    }
+
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding: 7em 10em 0em 0em;
+
+    }
+
+    .paragraph__japao {
+        width: 19em;
+        padding-right: 2em;
+    }
+
+    .line {
+        padding-left: 12.80em;
+    }
+
+
+    .destinations__subtitle {
+        margin-left: 2em;
+    }
+
+    .paragraph__destinations {
+        width: 32em;
+    }
+
+    .img__countries {
+        width: 648px;
+        height: 452px;
+    }
+
+    .button__destinations {
+        display: flex;
+        width: 182px;
+        margin-left: 3em;
+        padding: 1em 0em 1em 1.5em;
+    }
+
+    .Payment__terms {
+        margin-left: 3.2em;
+    }
+
+    .passport {
+        width: 312px;
+    }
+
+    .img-passport {
+        width: 648px;
+    }
+
+    .paragraph__paymet {
+        width: 33em;
+    }
+
+    .payment__button {
+        width: 200px;
+    }
+
+    .paragraph__testimonials {
+        width: 39em;
+        font-size: 1em;
+        line-height: 28px;
+
+    }
+
+    .testimonials__avatar {
+        width: 100px;
+    }
+
+    .avaliation {
+        padding-left: 4em;
+        position: relative;
+        top: -85px;
+    }
+
+    .img__pre-footer-tablet-desktop {
+        display: block;
+        width: 768px;
+    }
+
+    .img__footer-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1444px) {
+    .main__banner-desktop {
+        background-image: url('./assets/Banner\ Japão-desktop.png');
+        width: 1444px;
+        height: 620px;
+        background-size: cover;
+    }
+
+    .banner {
+        padding: 12em 53em 0em 0em;
+    }
+
+    .paragraph__japao {
+        width: 28em;
+        margin-left: 15em;
+    }
+
+    .line {
+        margin-left: 26.50em;
+
+        padding-bottom: 5em;
+    }
+
+    .destinations {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        margin-left: 6em;
+    }
+
+    .img__countries {
+        width: 628px;
+
+    }
+
+    .paragraph__destinations {
+        width: 29em;
+        position: relative;
+        right: 25px;
+
+    }
+
+    h4,
+    p,
+    input {
+        position: relative;
+        right: 65px;
+    }
+
+
+    .payment {
+        margin-left: 12em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+
+            "nome"
+            "input"
+
+        ;
+    }
+
+    .payment h2 {
+        grid-area: nome;
+
+    }
+
+    .payment h4 {
+        grid-area: nome;
+    }
+
+    .payment p {
+        grid-area: nome;
+    }
+
+    .payment input {
+        grid-area: input;
+    }
+
+
+
+    .payment img:nth-child(1) {
+        grid-row: 3/1;
+    }
+
+    .paragraph__paymet {
+        width: 18em;
+
+    }
+
+    .passport {
+        width: 373px;
+    }
+
+    .img03 {
+        position: relative;
+        right: 390px;
+        bottom: 90px;
+        width: 763px;
+    }
+
+    .payment__valor {
+        position: relative;
+        right: 150px;
+        padding: 1em 0em 1em 0em;
+
+    }
+
+    .payment__title {
+        padding-top: 3em;
+        position: relative;
+        right: 150px;
+    }
+
+    .paragraph__paymet {
+        padding-top: 9em;
+        position: relative;
+        right: 150px;
+        line-height: 28px;
+    }
+
+    .payment__button {
+        width: 200px;
+        height: 70px;
+        position: relative;
+        right: 159px;
+    }
+
+    .testimonials {
+        margin-left: 9.20em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .paragraph__testimonials {
+        width: 23.70em;
+
+    }
+
+    .testimonials__avatar {
+        font-size: 1.4em;
+        position: relative;
+        right: 50px;
+    }
+
+    .avaliation {
+        position: relative;
+        left: -30px;
+    }
+
+    .img__pre-footer-tablet-desktop {
+        width: 1440px;
+
+    }
+
+}
+
+
+
+
+
+/* Footer*/
+
+.footer__background {
+    width: 360px;
+    height: 396px;
+    background: var(--preto);
+}
+
+.footer__container {
+    display: flex;
+    margin-left: 1em;
+    flex-direction: column;
+    line-height: 1.5em;
+
+
+
+
+}
+
+.img__footer {
+    width: 161.84px;
+    height: 40px;
+
+    padding: 1em 5em 1em 5em;
+
+}
+
+.paragraph__footer {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-m-claro);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    width: 20em;
+    line-height: 2em;
+    padding-bottom: 1em;
+
+}
+
+.img__redes-sociais {
+    width: 92px;
+    margin-left: 7em;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .footer__background {
+        width: 767.6px;
+        height: 314px;
+    }
+
+    .footer__container {
+        display: flex;
+
+    }
+
+    .colum {
+        position: relative;
+        left: 430px;
+        bottom: 150px;
+        padding: 0px;
+    }
+
+    .img__footer {
+        padding-top: 1.5em;
+    }
+
+    .img__redes-sociais {
+        width: 100px;
+        height: 42px;
+
+    }
+
+}
+
+@media screen and (min-width:1444px) {
+
+    .footer__background {
+        width: 1444px;
+        height: 258px;
+
+    }
+
+    .colum {
+        position: relative;
+        left: 868px;
+        bottom: 120px;
+        padding: 0px;
+    }
+
+    .img__footer {
+        padding-top: 2em;
+    }
+
+    .paragraph__footer {
+        width: 30em;
+        padding-left: 5em;
+    }
+
+    .img__redes-sociais {
+        padding-left: 9.5em;
+    }
+}

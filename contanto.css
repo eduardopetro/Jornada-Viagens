@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@import url('./styles.css/header.css');
+@import url('./styles.css/main.css');
+@import url('./styles.css/footer.css');
+
+:root {
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --bordo: #B81515;
+    --cinza-m-claro: #F5F5F5;
+
+    --fonte-principal: 'Montserrat';
+}
+
+body {
+    background: var(--cinza-m-claro);
+}
+
+/*HEADER*/
+
+.header__container {
+    background: var(--preto);
+    padding: 0em 0px 2em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 73px;
+}
+
+
+.logo__jornada {
+    width: 150px;
+    padding-top: 1em;
+}
+
+.material-symbols-outlined {
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+
+.header__link {
+    display: none;
+    font-size: 1em;
+}
+
+a {
+    font-size: 0.5em;
+    margin-top: 3em;
+}
+
+.img-arrow {
+    padding-left: 7em;
+    font-weight: 400;
+    width: 17px;
+    height: 10px;
+}
+
+.bandeira {
+    padding-left: 1em;
+    position: relative;
+    right: 1em;
+    top: 10px;
+}
+
+@media screen and (min-width:768px) {
+
+    .banner__contato {
+        background-position: bottom;
+    }
+
+    .header__container {
+        height: 126px;
+        display: flex;
+        justify-content: space-around;
+        gap: 210px;
+    }
+
+    .material-symbols-outlined {
+        padding-right: 2em;
+    }
+
+
+    .logo__jornada {
+        width: 250px;
+        padding-top: 3em;
+        padding-right: 7em;
+    }
+
+    .contato__title {
+        padding: 0em 0em 0em 0em;
+    }
+
+}
+
+@media screen and (min-width:1444px) {
+
+    .header__link {
+        display: block;
+        display: flex;
+        gap: 30px;
+        padding-right: 1em;
+        padding-top: 3.5em;
+
+    }
+
+    .logo__jornada {
+        padding-left: 3em;
+        padding-top: 1em;
+    }
+
+    li {
+        font-size: 1.5em;
+    }
+
+    span#menu-button {
+        display: none;
+    }
+
+    .bandeira {
+        position: relative;
+        right: 35px;
+        top: -2px;
+    }
+
+
+    .header__links-a {
+        position: relative;
+        left: 30px;
+    }
+
+    .img-arrow {
+        display: block;
+        position: relative;
+        bottom: 19px;
+        right: 40px;
+
+    }
+
+
+}
+
+
+/* MAIN*/
+
+.banner__contato {
+    background-image: url('./assets/Banner\ Japão-contato.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 99.0.5em;
+    height: 33em;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contato__descricao {
+    padding: 0.5em 0em 0em 2em;
+}
+
+.contato__title {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.line__contato {
+    padding: 1em 0em 1em 3.5em;
+}
+
+.contato__paragraph {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 400;
+    width: 20em;
+    line-height: 1.6em;
+}
+
+.title__form {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 1em 0em 1em 1em;
+}
+
+.form__paragraph {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 1em;
+    font-weight: 400;
+    width: 21em;
+    margin-left: 1em;
+    line-height: 1.4em;
+}
+
+.form__espaco {
+    padding: 1em 0em 1em 1em;
+}
+
+
+
+input {
+    border: 4px solid gray;
+    border-radius: 4px none 2px none;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.form__text {
+    border: 4px solid var(--bordo);
+
+}
+
+
+.button__form {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    background: var(--bordo);
+    border: none;
+    font-size: 1.25em;
+    font-weight: 400;
+    border-radius: 0.4em;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0.5em 0em 2em 0.9em;
+}
+
+.img__pre-rodape {
+    width: 360px;
+    height: 250px;
+}
+
+
+.form__mobile {
+    display: block;
+}
+
+.form__tablet {
+    display: none;
+
+}
+
+.form__desktop {
+    display: none;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    .banner__contato {
+        height: 400px;
+    }
+
+    .contato__title {
+        padding: 0em 0em 0em 7em;
+    }
+
+    .line__contato {
+        padding-left: 16em;
+    }
+
+    .contato__paragraph {
+        width: 40em;
+        padding-left: 4em;
+    }
+
+    .title__form {
+        padding-left: 9.50em;
+
+    }
+
+    .form__paragraph {
+        width: 45em;
+        line-height: 2em;
+
+    }
+
+    .img__pre-rodape {
+        width: 768px;
+    }
+
+    .form {
+        margin-left: 3em;
+    }
+
+    .form__mobile {
+        display: none;
+    }
+
+    .form__tablet {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:1444px) {
+
+    .banner__contato {
+        height: 620px;
+    }
+
+    .contato__descricao {
+        padding-top: 4em;
+    }
+
+    .contato__descricao {
+        padding-right: 0em;
+    }
+
+    .contato__title {
+        font-size: 3em;
+        padding-top: 2.7em;
+        position: relative;
+        right: 230px;
+        padding-bottom: 0.5em;
+    }
+
+    .line__contato {
+        padding: 0px;
+        padding-left: 7em;
+    }
+
+    .contato__paragraph {
+        font-size: 1.25em;
+        width: 29em;
+        padding-left: 5.50em;
+        line-height: 2em;
+        padding-top: 2em;
+    }
+
+    .title__form {
+        font-size: 2.5em;
+        padding-left: 12.30em;
+    }
+
+    .form__paragraph {
+        width: 60em;
+        padding-left: 6em;
+        font-size: 1.25em;
+        font-weight: 400;
+
+    }
+
+    .form__tablet {
+        display: none;
+    }
+
+    .form__desktop {
+        display: block;
+    }
+
+    .form__espaco {
+        padding-left: 21em;
+    }
+
+    .button__form {
+
+        font-family: var(--fonte-principal);
+        color: var(--branco);
+        background: var(--bordo);
+        border: none;
+        font-size: 1.25em;
+        font-weight: 700;
+        border-radius: 0.4em;
+        width: 182px;
+        height: 3em;
+        margin: 3em 0em 3em 16.80em;
+
+    }
+}
+
+/*FOOTER*/
+
+
+.footer__background {
+    width: 360px;
+    height: 350px;
+    background: var(--preto);
+}
+
+.footer__container {
+    display: flex;
+    margin-left: 1em;
+    flex-direction: column;
+    line-height: 1.5em;
+}
+
+.img__footer {
+    width: 161.84px;
+    height: 40px;
+    padding: 1em 5em 1em 5em;
+}
+
+.paragraph__footer {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-m-claro);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    width: 20em;
+    line-height: 2em;
+    padding-bottom: 1em;
+}
+
+.img__redes-sociais {
+    width: 92px;
+    margin-left: 7em;
+}
+
+@media screen and (min-width:768px) {
+    .footer__background {
+        width: 767.6px;
+        height: 314px;
+    }
+
+    .footer__container {
+        display: flex;
+
+    }
+
+    .colum {
+        position: relative;
+        left: 430px;
+        bottom: 150px;
+        padding: 0px;
+    }
+
+    .img__footer {
+        padding-top: 1.5em;
+    }
+
+    .img__redes-sociais {
+        width: 100px;
+        height: 42px;
+
+    }
+
+}
+
+@media screen and (min-width:1444px) {
+    .footer__background {
+        width: 1444px;
+        height: 260px;
+
+    }
+
+    .colum {
+        position: relative;
+        left: 868px;
+        bottom: 120px;
+        padding: 0px;
+    }
+
+    .img__footer {
+        padding-top: 2em;
+    }
+
+    .paragraph__footer {
+        width: 30em;
+        padding-left: 5em;
+    }
+
+    .img__redes-sociais {
+        padding-left: 9.5em;
+    }
+
+    .img__pre-rodape {
+        width: 1444px;
+        height: 600px;
+    }
+}
