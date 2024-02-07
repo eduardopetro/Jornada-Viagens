@@ -98,7 +98,7 @@ a {
     .header__link {
         display: block;
         display: flex;
-        gap: 30px;
+        gap: 40px;
         padding-right: 1em;
         padding-top: 3.5em;
 
@@ -127,14 +127,20 @@ a {
     .header__links-a {
         position: relative;
         left: 30px;
+        top:-29px
     }
 
     .img-arrow {
         display: block;
         position: relative;
-        bottom: 19px;
+        bottom: 20px;
         right: 40px;
 
+    }
+
+    .header__links-c{
+        position: relative;
+        top: 2px;
     }
 
 
