@@ -93,7 +93,7 @@ a {
 
 }
 
-@media screen and (min-width:1444px) {
+@media screen and (min-width:1520px) {
 
     .header__link {
         display: block;
@@ -297,7 +297,7 @@ input {
 
 }
 
-@media screen and (min-width:1444px) {
+@media screen and (min-width:1520px) {
 
     .banner__contato {
         height: 620px;
@@ -371,8 +371,12 @@ input {
         margin: 3em 0em 3em 16.80em;
 
     }
+
+    .img_background{
+        width: 1520px;
+    }
     .img__pre-rodape{
-        width: 1444px;
+        width: 1520px;
     }
 }
 
@@ -444,9 +448,9 @@ input {
 
 }
 
-@media screen and (min-width:1444px) {
+@media screen and (min-width:1520px) {
     .footer__background {
-        width: 1444px;
+        width: 1520px;
         height: 260px;
 
     }

@@ -89,10 +89,11 @@ li>a {
 
 }
 
-@media screen and (min-width:1444px) {
+@media screen and (min-width:1520px) {
 
     .header__container {
         height: 50px;
+        width: 1520px;
     }
 
     span#menu-button {
@@ -475,11 +476,11 @@ h5 {
     }
 }
 
-@media screen and (min-width:1444px) {
+@media screen and (min-width:1520px) {
     .main__banner-desktop {
         background-image: url('./assets/Banner\ Japão-desktop.png');
         height: 620px;
-        width: 1494px;
+        width: 1520px;
 
         background-size: cover;
     }
@@ -629,7 +630,7 @@ h5 {
     }
 
     .img__pre-footer-tablet-desktop {
-        width: 1440px;
+        width: 1520px;
 
     }
 
@@ -652,8 +653,6 @@ h5 {
     margin-left: 1em;
     flex-direction: column;
     line-height: 1.5em;
-
-
 
 
 }
@@ -715,10 +714,10 @@ h5 {
 
 }
 
-@media screen and (min-width:1444px) {
+@media screen and (min-width:1520px) {
 
     .footer__background {
-        width: 1444px;
+        width: 1520px;
         height: 258px;
 
     }

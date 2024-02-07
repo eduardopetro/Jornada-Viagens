@@ -429,9 +429,9 @@ h5 {
 
 }
 
-@media screen and (min-width:1444px) {
+@media screen and (min-width:1520px) {
 
-   
+
     .mobile {
         display: none;
     }
@@ -442,11 +442,12 @@ h5 {
 
     .desktop {
         display: block;
+        width: 1520px;
     }
-   
+
     .img__footer-desktop {
         display: block;
-        width: 1500px;
+
     }
 
     .img__footer-tablet {
@@ -645,7 +646,13 @@ h5 {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-    .img__footer-desktop{
+
+    .img_background{
+        width: 1520px;
+    }
+
+    .img__footer-desktop {
+        width: 1520px;
     }
 
 }
