@@ -478,8 +478,9 @@ h5 {
 @media screen and (min-width:1444px) {
     .main__banner-desktop {
         background-image: url('./assets/Banner\ Japão-desktop.png');
-        width: 1444px;
         height: 620px;
+        width: 1494px;
+
         background-size: cover;
     }
 
